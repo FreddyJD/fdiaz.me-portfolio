@@ -1,65 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Student BIO | Freddy J. Diaz</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Charm|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
+
 <body>
-    <!-- basic bio -->
+    <a href=""></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Freddy J.</h2>
 
-    <header>
-        <h1>Student Bio</h1>
-    </header>
+                <p>Great <span>design</span> and a well-written code is my goal in <span>every</span>
+                    project.</p>
+                <hr>
 
-    <div class="new"> 
-    <section id="one">
-            <h2>Freddy J. Diaz</h2>
-            <img src="profile.png" alt="Profile Pic" style="width: 200px;height: 200px;">
-    </section>
+                <a href="https://github.com/FreddyJD">
+                <i class="fab fa-github"></i>
+                </a>
 
-    <section id="one">
-            <p>Lorem Ipsum is simply dummy text of the printing to make a type specimen book.
-            <a href="#">www.loremipsu.com</a> </p>
-    </section>
+                <i class="far fa-envelope-open"></i>
 
-    <section id="one">
-            <h2>Contact Info</h2>
-            <ul>
-                <li> Email : <a href="malito:freddy.jd2@gmail.com">freddy.jd2@gmail.com</a> </li>
-                <li> GitHub : <a href="https://github.com/FreddyJD">FreddyJD</a> </li>
-                <li> Porfolio : <a href="#">FreddyPortfolio.com</a> </li>
-            </ul>
-    </section>
+                <a href="https://www.linkedin.com/in/freddyjd/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+            </div>
+            <div class="col-md-4">
+                <h2>Front-End</h2>
+                <p>HTML • CSS • JavaScript</p>
+
+                <div class="card text-white bg-dark mb-3 block-2" style="max-width: 18rem;">
+                    <p class="card-text p-sm">RackCrate Hosting <br> Web design</p>
+                </div>
+
+                <div class="card text-white bg-dark mb-3 block-1" style="max-width: 18rem;">
+                        <p class="card-text p-sm">Coin Colector <br>Simple vanilla JS</p>
+                    <a href="https://github.com/FreddyJD/CoinColector">GitHub repo</a>
+                    </div>
+
+                <div class="card text-white bg-dark mb-3 block-1" style="max-width: 18rem;">
+                    <p class="card-text p-sm">HangMan <br> Web design</p>
+                </div>
+
+                
+
+            </div>
+            <div class="col-md-4">
+                <h2>Back-End</h2>
+                <p>HTML • CSS • JavaScript</p>
+                <div class="card text-white bg-dark mb-3 special" style="max-width: 18rem;">
+                    <p class="card-text p-sm">RackCrate Hosting <br> Web design</p>
+                </div>
+
+                <div class="card text-white bg-dark mb-3 special" style="max-width: 18rem;">
+                    <p class="card-text p-sm">HangMan <br> Web design</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <style>
-        body{
-            margin: 0px;
-            padding: 0px;
-        }
-        header{
-            background-color: black;
-            height: -50px;
-        }
-        h1 {
-            color: white;
-            text-align: center;
-        }
-        .new { 
-            width: 80%;
-            margin: 0 auto; /* 0 AUTO = Center the text*/ 
-            background-color: gray;
-
-        }
-        #one {
-            float: left; /* Stop stacking /// Start stacking left to right */
-            width: 33%;
-        }
-    </style>
-        
+    </div>
 </body>
+
+<style>
+    .col-md-3 {
+        padding: 5% 5px;
+
+    }
+
+    .block-1 {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.79), rgba(255, 255, 255, 0.845)), url(includes/title1.png);
+        border-radius: 10px;
+        background-size: 300px 300px;
+    }
+
+    .block-2 {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.79), rgba(255, 255, 255, 0.845)), url(includes/title2.png);
+        border-radius: 10px;
+        background-size: 40px 120px;
+        border: none;
+    }
+
+
+    hr {
+        height: 1px;
+        color: #ffffff;
+        background-color: #ffffff;
+        border: none;
+    }
+
+    .bd-callout-warning {
+        border-left-color: #1C849B;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 100;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .p-sm {
+        font-size: 14px;
+        color: black;
+        margin: 2px 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+
+    }
+
+    .container {
+        margin: 10% auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        color: black;
+    }
+
+    .col-md-4 {
+        padding: 5%;
+    }
+
+    i {
+        font-size: 1.8em;
+        padding: 0 20px;
+    }
+
+    html {
+        height: 100%;
+        width: 100%;
+    }
+
+    a,
+    a:hover {
+        color: black;
+    }
+
+    body {
+        background-color: #c1a081;
+background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23dddddd' fill-opacity='0.31' fill-rule='evenodd'/%3E%3C/svg%3E");
+      /* background-repeat: no-repeat; */
+    }
+
+    span {
+        font-family: 'Charm', cursive;
+        font-weight: 100;
+    }
+</style>
+
+<script>
+</script>
+
 </html>
-
-

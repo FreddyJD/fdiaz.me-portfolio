@@ -1,3 +1,7 @@
+/* I must be honest here - my portfolio CSS is a mess */
+/* Usually I make cleaner code */
+/* With love - Freddy */
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Rancho');
 
 .pad {
@@ -9,16 +13,46 @@
 .new {
 	color: white;
 }
+.new:hover {
+	color: white;
+}
+
 .block-1 {
-	background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.651)), url(includes/title1.png);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(title2.png);
 	border-radius: 10px;
-	background-size: 400px 180px;
+	background-size: 70%;
 	border: none;
 }
 .block-2 {
-	background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.651)), url(includes/title2.png);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(title1.png);
 	border-radius: 10px;
-	background-size: 400px 180px;
+	background-size: 70%;
+	border: none;
+}
+
+.block-3 {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(title3.png);
+	border-radius: 10px;
+	background-size: 70%;
+	border: none;
+}
+.block-4 {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(title2.png);
+	border-radius: 10px;
+	background-size: 70%;
+	border: none;
+}
+
+.block-5 {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(title1.png);
+	border-radius: 10px;
+	background-size: 70%;
+	border: none;
+}
+.block-6 {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(title2.png);
+	border-radius: 10px;
+	background-size: 70%;
 	border: none;
 }
 hr {
@@ -42,6 +76,7 @@ p {
 	margin: 6px 20px;
 }
 
+
 img {
 	width: 125px;
 	height: 125px;
@@ -52,10 +87,17 @@ img {
 }
 .p-sm-s {
 	font-size: 14px;
-	color: rgb(206, 206, 206);
+	color: rgb(255, 255, 255);
 	font-weight: 300;
 	font-family: 'Open Sans', sans-serif;
 }
+
+.hf {
+    background-color: #FA618D;
+	background-image: linear-gradient(to right, #F6519E 0%, #FF7477 100%);
+	font-size: 12px;
+}
+
 
 h2 {
 	font-size: 24px;

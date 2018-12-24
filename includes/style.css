@@ -18,39 +18,39 @@
 }
 
 .block-1 {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(title2.png);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(../includes/title1.png);
 	border-radius: 10px;
 	background-size: 70%;
 	border: none;
 }
 .block-2 {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(title1.png);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(../includes/title1.png);
 	border-radius: 10px;
 	background-size: 70%;
 	border: none;
 }
 
 .block-3 {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(title3.png);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(../includes/title3.png);
 	border-radius: 10px;
 	background-size: 70%;
 	border: none;
 }
 .block-4 {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(title2.png);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(../includes/title2.png);
 	border-radius: 10px;
 	background-size: 70%;
 	border: none;
 }
 
 .block-5 {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(title1.png);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(../includes/title1.png);
 	border-radius: 10px;
 	background-size: 70%;
 	border: none;
 }
 .block-6 {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(title2.png);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.664)), url(../includes/title2.png);
 	border-radius: 10px;
 	background-size: 70%;
 	border: none;

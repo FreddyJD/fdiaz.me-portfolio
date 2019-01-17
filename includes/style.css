@@ -4,6 +4,209 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Rancho');
 
+.bg1 { 
+	background: linear-gradient(147deg, #ff9472, #f2709c, #ddd6f3, #faaca8, #5f2c82, #49a09d);
+	background-size: 1200% 1200%;
+	
+	-webkit-animation: bg1 60s ease infinite;
+	-moz-animation: bg1 60s ease infinite;
+	animation: bg1 60s ease infinite;
+}
+	
+	@-webkit-keyframes bg1 {
+		0%{background-position:0% 23%}
+		50%{background-position:100% 78%}
+		100%{background-position:0% 23%}
+	}
+	@-moz-keyframes bg1 {
+		0%{background-position:0% 23%}
+		50%{background-position:100% 78%}
+		100%{background-position:0% 23%}
+	}
+	@keyframes bg1 { 
+		0%{background-position:0% 23%}
+		50%{background-position:100% 78%}
+		100%{background-position:0% 23%}
+	}
+
+  
+html, body {
+	width: 100%;
+	height: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+  }
+  
+  
+  h1, h2, h3, h4 {
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+  }
+
+  p { 
+	font-size: 16px;
+	line-height: 1.3;
+	font-weight: 100;
+	font-family: 'Open Sans', sans-serif;
+
+  }
+
+  .text-centered { 
+	text-align: center;
+  }
+  
+  .material-tabs {
+	display: block;
+	float: left;
+	padding: 16px;
+	padding-top: 0;
+	width: 100%;
+	max-width: 800px;
+	left: calc(50% - 800px/2);
+	position: relative;
+	margin: 96px auto;
+	background: #fff;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.096) !important;
+	border-radius: 15px;
+  }
+  @media all and (max-width: 480px) {
+	.material-tabs {
+	  max-width: 100%;
+	  left: 0;
+	}
+  }
+  
+  .visible {
+	position: relative;
+	opacity: 1;
+	width: 100%;
+	height: auto;
+	float: left;
+	transition: opacity .35s ease;
+	z-index: 3;
+  }
+  
+  .hidden {
+	position: absolute;
+	opacity: 0;
+	z-index: 0;
+	transition: opacity 0s ease;
+  }
+  .hidden img {
+	display: none;
+  }
+  
+  [class*="tabbed-section-"] {
+	float: left;
+	color: #000;
+  }
+  [class*="tabbed-section-"] img {
+	display: block;
+	width: 80%;
+	margin: auto 10%;
+  }
+  
+  .tabbed-section__selector {
+	position: relative;
+	height: 32px;
+	top: -31.2px;
+	left: 16px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	float: left;
+  }
+  .tabbed-section__selector [class*="-tab-"] {
+	float: left;
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	width: 100px;
+	text-align: center;
+	background: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+  }
+  .tabbed-section__selector [class*="-tab-"].active {
+	color: #4F2CCA;
+  }
+  .tabbed-section__selector a:first-child {
+	border-top-left-radius: 10px;
+  }
+  .tabbed-section__selector a:last-of-type {
+	border-top-right-radius: 10px;
+  }
+  
+  .tabbed-section__highlighter {
+	position: absolute;
+	z-index: 10;
+	bottom: 0;
+	height: 1px;
+	background: rgba(78, 44, 202, 0.048);
+	max-width: 100px;
+	width: 100%;
+	-webkit-transform: translateX(0);
+			transform: translateX(0);
+	display: block;
+	left: 0;
+	transition: -webkit-transform 0.23s ease;
+	transition: transform 0.23s ease;
+	transition: transform 0.23s ease, -webkit-transform 0.23s ease;
+  }
+  
+  .tabbed-section__selector-tab-3.active ~ .tabbed-section__highlighter {
+	-webkit-transform: translateX(200px);
+			transform: translateX(200px);
+  }
+  
+  .tabbed-section__selector-tab-2.active ~ .tabbed-section__highlighter {
+	-webkit-transform: translateX(100px);
+			transform: translateX(100px);
+  }
+  
+  .tabbed-section__selector-tab-1.active ~ .tabbed-section__highlighter {
+	-webkit-transform: translateX(0);
+			transform: translateX(0);
+  }
+  
+  .divider {
+	background: rgba(0, 0, 0, 0.1);
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+	height: 1px;
+	margin: 8px 0;
+	padding: 0;
+	overflow: hidden;
+  }
+
+span {
+	font-family: 'Rancho', cursive;
+	font-size: 24px;
+}
+
+.img-container {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 40%;
+	height: 40%;
+	text-align: center;
+}
+
+  
+
+
+  /* ajnbhgfdghjkls */
+
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Rancho');
+
 .pad {
 	padding: 5% 5px;
 }
@@ -136,4 +339,4 @@ a,a:hover {
 span {
 	font-family: 'Rancho', cursive;
 	font-size: 24px;
-}
+} */

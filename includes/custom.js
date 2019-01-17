@@ -1,50 +1,78 @@
-var colors = new Array(
-    [246, 226, 112],
-    [242, 213, 11],
-    [243, 184, 54],
-    [239, 114, 73],
-    [240, 98, 120],
-    [248, 164, 137]);
-
-var step = 0;
-var colorIndices = [0, 1, 2, 3];
-var gradientSpeed = 0.005;
-
-function updateGradient() {
-
-    if ($ === undefined) return;
-
-    var c0_0 = colors[colorIndices[0]];
-    var c0_1 = colors[colorIndices[1]];
-    var c1_0 = colors[colorIndices[2]];
-    var c1_1 = colors[colorIndices[3]];
-
-    var istep = 1 - step;
-    var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
-    var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
-    var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
-    var color1 = "rgb(" + r1 + "," + g1 + "," + b1 + ")";
-
-    var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
-    var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
-    var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
-    var color2 = "rgb(" + r2 + "," + g2 + "," + b2 + ")";
-
-    $('#gradient').css({
-        background: "-webkit-gradient(linear, left top, right top, from(" + color1 + "), to(" + color2 + "))"
-    }).css({
-        background: "-moz-linear-gradient(left, " + color1 + " 0%, " + color2 + " 100%)"
-    });
+var typed = new Typed("#typed", {
+    strings: ["^200In ES6 (JS) ^3000", "^1000 Some NodeJS modules.^3000", "^1000 React ❤️ ^3000", "^1000 Languages that I Dont know  ^1000 .^500.^500.^500 ^200y^200e^200t^200! ^500😄 ^3000"],
+    typeSpeed: 100,
+    smartBackspace: true,
+    loop: true
+  });
+// TOGGLE SECTIONS
+// querySelector, jQuery style
+var $ = function (selector) {
+    return document.querySelectorAll(selector);
+  };
+  
+  
+  // Define tabs, write down them classes
+  var tabs = [
+    '.tabbed-section__selector-tab-1',
+    '.tabbed-section__selector-tab-2',
+    '.tabbed-section__selector-tab-3'
+  ];
+  
+  // Create the toggle function
+  var toggleTab = function(element) {
+    var parent = element.parentNode;
     
-    step += gradientSpeed;
-    if (step >= 1) {
-        step %= 1;
-        colorIndices[0] = colorIndices[1];
-        colorIndices[2] = colorIndices[3];
-        colorIndices[1] = (colorIndices[1] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-        colorIndices[3] = (colorIndices[3] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-
-    }
-}
-
-setInterval(updateGradient, 10);
+    // Do things on click
+    $(element)[0].addEventListener('click', function(){
+      // Remove the active class on all tabs.
+      // climbing up the DOM tree with `parentNode` and target 
+      // the children ( the tabs ) with childNodes
+      this.parentNode.childNodes[1].classList.remove('active');
+      this.parentNode.childNodes[3].classList.remove('active');
+      this.parentNode.childNodes[5].classList.remove('active');
+  
+      // Then, give `this` (the clicked tab), the active class
+      this.classList.add('active');
+      
+      // Check if the clicked tab contains the class of the 1 or 2
+      if(this.classList.contains('tabbed-section__selector-tab-1')) {
+        // and change the classes, show the first content panel
+        $('.tabbed-section-1')[0].classList.remove('hidden');
+        $('.tabbed-section-1')[0].classList.add('visible');
+        
+        // Hide the second
+        $('.tabbed-section-2')[0].classList.remove('visible');
+        $('.tabbed-section-2')[0].classList.add('hidden');
+         $('.tabbed-section-3')[0].classList.remove('visible');
+        $('.tabbed-section-3')[0].classList.add('hidden');
+      }
+  
+      if(this.classList.contains('tabbed-section__selector-tab-2')) {
+        // and change the classes, show the second content panel
+        $('.tabbed-section-2')[0].classList.remove('hidden');
+        $('.tabbed-section-2')[0].classList.add('visible');
+        // Hide the first
+        $('.tabbed-section-1')[0].classList.remove('visible');
+        $('.tabbed-section-1')[0].classList.add('hidden');
+        $('.tabbed-section-3')[0].classList.remove('visible');
+        $('.tabbed-section-3')[0].classList.add('hidden');
+      }
+      
+      if(this.classList.contains('tabbed-section__selector-tab-3')) {
+        // and change the classes, show the second content panel
+        $('.tabbed-section-3')[0].classList.remove('hidden');
+        $('.tabbed-section-3')[0].classList.add('visible');
+        // Hide the first
+        $('.tabbed-section-1')[0].classList.remove('visible');
+        $('.tabbed-section-1')[0].classList.add('hidden');
+        $('.tabbed-section-2')[0].classList.remove('visible');
+        $('.tabbed-section-2')[0].classList.add('hidden');
+      }
+    });
+  };
+  
+  // Then finally, iterates through all tabs, to activate the 
+  // tabs system.
+  for (var i = tabs.length - 1; i >= 0; i--) {
+    toggleTab(tabs[i])
+  };

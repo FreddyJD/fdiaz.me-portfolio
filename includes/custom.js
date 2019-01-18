@@ -1,78 +1,100 @@
-var typed = new Typed("#typed", {
-    strings: ["^200In ES6 (JS) ^3000", "^1000 Some NodeJS modules.^3000", "^1000 React ❤️ ^3000", "^1000 Languages that I Dont know  ^1000 .^500.^500.^500 ^200y^200e^200t^200! ^500😄 ^3000"],
-    typeSpeed: 100,
-    smartBackspace: true,
-    loop: true
-  });
-// TOGGLE SECTIONS
-// querySelector, jQuery style
+// Welcome to my portfolio. 
+// Inspecting element 🕵️‍ ? What a detective! 
+
+// If you are trying to find out how I do things
+// you can just email me @ ✅ git.fdiaz@gmail.com 
+
+// 🔥 hit me up with your idea/project. I try 
+// to say yes to everything....
+
+
 var $ = function (selector) {
     return document.querySelectorAll(selector);
   };
   
-  
-  // Define tabs, write down them classes
   var tabs = [
     '.tabbed-section__selector-tab-1',
     '.tabbed-section__selector-tab-2',
-    '.tabbed-section__selector-tab-3'
+    '.tabbed-section__selector-tab-3',
+    '.tabbed-section__selector-tab-4'
   ];
   
-  // Create the toggle function
   var toggleTab = function(element) {
     var parent = element.parentNode;
     
-    // Do things on click
     $(element)[0].addEventListener('click', function(){
-      // Remove the active class on all tabs.
-      // climbing up the DOM tree with `parentNode` and target 
-      // the children ( the tabs ) with childNodes
       this.parentNode.childNodes[1].classList.remove('active');
       this.parentNode.childNodes[3].classList.remove('active');
       this.parentNode.childNodes[5].classList.remove('active');
+      this.parentNode.childNodes[7].classList.remove('active');
+
   
-      // Then, give `this` (the clicked tab), the active class
       this.classList.add('active');
       
-      // Check if the clicked tab contains the class of the 1 or 2
       if(this.classList.contains('tabbed-section__selector-tab-1')) {
-        // and change the classes, show the first content panel
         $('.tabbed-section-1')[0].classList.remove('hidden');
         $('.tabbed-section-1')[0].classList.add('visible');
-        
-        // Hide the second
+    
         $('.tabbed-section-2')[0].classList.remove('visible');
         $('.tabbed-section-2')[0].classList.add('hidden');
+
          $('.tabbed-section-3')[0].classList.remove('visible');
         $('.tabbed-section-3')[0].classList.add('hidden');
+
+        $('.tabbed-section-4')[0].classList.remove('visible');
+        $('.tabbed-section-4')[0].classList.add('hidden');
       }
   
       if(this.classList.contains('tabbed-section__selector-tab-2')) {
-        // and change the classes, show the second content panel
         $('.tabbed-section-2')[0].classList.remove('hidden');
         $('.tabbed-section-2')[0].classList.add('visible');
-        // Hide the first
         $('.tabbed-section-1')[0].classList.remove('visible');
         $('.tabbed-section-1')[0].classList.add('hidden');
         $('.tabbed-section-3')[0].classList.remove('visible');
         $('.tabbed-section-3')[0].classList.add('hidden');
+
+        $('.tabbed-section-4')[0].classList.remove('visible');
+        $('.tabbed-section-4')[0].classList.add('hidden');
       }
       
       if(this.classList.contains('tabbed-section__selector-tab-3')) {
-        // and change the classes, show the second content panel
         $('.tabbed-section-3')[0].classList.remove('hidden');
         $('.tabbed-section-3')[0].classList.add('visible');
-        // Hide the first
+
         $('.tabbed-section-1')[0].classList.remove('visible');
         $('.tabbed-section-1')[0].classList.add('hidden');
         $('.tabbed-section-2')[0].classList.remove('visible');
         $('.tabbed-section-2')[0].classList.add('hidden');
+
+        $('.tabbed-section-4')[0].classList.remove('visible');
+        $('.tabbed-section-4')[0].classList.add('hidden');
       }
+
+      if(this.classList.contains('tabbed-section__selector-tab-4')) {
+        $('.tabbed-section-4')[0].classList.remove('hidden');
+        $('.tabbed-section-4')[0].classList.add('visible');
+
+        $('.tabbed-section-1')[0].classList.remove('visible');
+        $('.tabbed-section-1')[0].classList.add('hidden');
+        $('.tabbed-section-2')[0].classList.remove('visible');
+        $('.tabbed-section-2')[0].classList.add('hidden');
+
+        $('.tabbed-section-3')[0].classList.remove('visible');
+        $('.tabbed-section-3')[0].classList.add('hidden');
+      }
+
     });
   };
   
-  // Then finally, iterates through all tabs, to activate the 
-  // tabs system.
   for (var i = tabs.length - 1; i >= 0; i--) {
     toggleTab(tabs[i])
   };
+
+  var typed = new Typed("#typed", {
+    strings: ["^200In Es6 (js) ^3000", "^1000 Some NodeJS modules.^3000", "^1000 React ❤️ ^3000", "^1000 Languages that I Dont know  ^1000 .^500.^500.^500 ^200y^200e^200t^200! ^500😄 ^3000"],
+    typeSpeed: 100,
+    smartBackspace: true,
+    loop: true
+  });
+
+  

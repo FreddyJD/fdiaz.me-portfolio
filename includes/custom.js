@@ -91,7 +91,7 @@ var $ = function (selector) {
   };
 
   var typed = new Typed("#typed", {
-    strings: ["^200In Es6 (js) ^3000", "^1000 Some NodeJS modules.^3000", "^1000 React ❤️ ^3000", "^1000 Languages that I Dont know  ^1000 .^500.^500.^500 ^200y^200e^200t^200! ^500😄 ^3000"],
+    strings: ["^200Project ^3000", "^1000 Freelance Work^3000", "^1000 Job ^3000"],
     typeSpeed: 100,
     smartBackspace: true,
     loop: true

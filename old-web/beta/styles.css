@@ -1,9 +1,0 @@
-.profile { 
-    width: 25%;
-}
- @media (min-width: 576px) { 
-     .profile {
-         width: 40%;
-     }
-
-}
